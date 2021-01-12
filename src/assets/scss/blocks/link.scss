@@ -1,0 +1,17 @@
+.link {
+   text-decoration: none;
+   color: black;
+
+   &:hover {
+      color: #1eaaf1;
+   }
+
+   .header span &:hover {
+      color: black;
+   }
+
+   &__landing {
+      color: white;
+      margin-right: 1rem;
+   }
+}

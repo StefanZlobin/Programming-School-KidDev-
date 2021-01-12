@@ -1,0 +1,50 @@
+.feedback {
+   margin-top: 5rem;
+
+   // .feedback__items
+
+   &__items {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   // .feedback__item
+
+   &__item {
+      display: flex;
+      justify-content: space-between;
+
+      opacity: 0.5;
+   }
+
+   &__item:nth-child(3n + 2) {
+      opacity: 1;
+   }
+
+   // .feedback__person
+
+   &__person {
+      display: flex;
+      flex-direction: column;
+   }
+
+   // .feedback__person--text
+
+   &__person--text {
+      color: #323232;
+
+      margin-bottom: 1rem;
+   }
+
+   // .feedback__person--name
+
+   &__person--name {
+      color: black;
+   }
+
+   // .feedback__person--parent
+
+   &__person--parent {
+      color: #1eaaf1;
+   }
+}

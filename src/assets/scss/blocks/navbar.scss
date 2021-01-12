@@ -1,0 +1,39 @@
+.navbar {
+   padding: 5rem 10rem;
+
+   transition-duration: 1s;
+
+   // .navbar__items
+
+   &__items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   // .navbar__item
+
+   &__item {
+   }
+
+   // .navbar__item--logo
+
+   &__item--logo {
+      margin-right: 40rem;
+
+      font-size: 2.4rem;
+      font-weight: 900;
+   }
+}
+
+.nav-fixed {
+   position: fixed;
+   top: 0;
+
+   width: 100%;
+   padding: 0 5rem;
+
+   transition-duration: 1s;
+
+   background-color: yellow;
+}

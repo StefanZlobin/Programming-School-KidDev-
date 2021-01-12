@@ -1,0 +1,46 @@
+.about {
+   // .about__items
+
+   &__items {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   // .about__item
+
+   &__item:nth-child(1) {
+      width: 58%;
+
+      padding: 5rem 0;
+   }
+
+   &__item:nth-child(2) {
+      background-color: #fafafa;
+
+      width: 41%;
+
+      padding: 5rem 3rem;
+
+      display: flex;
+      flex-direction: column;
+   }
+
+   // .about__info
+
+   &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: start;
+
+      height: 20rem;
+   }
+
+   // .about__title
+
+   &__title {
+      font-size: 2rem;
+      font-weight: 500;
+      color: black;
+   }
+}

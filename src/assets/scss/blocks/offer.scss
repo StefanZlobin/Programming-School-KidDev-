@@ -1,0 +1,19 @@
+.offers {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+   margin-top: 3rem;
+
+   // .offers__item
+
+   &__item {
+      display: flex;
+      align-items: flex-start;
+
+      margin-bottom: 2rem;
+
+      width: 35rem;
+      height: 20rem;
+   }
+}
