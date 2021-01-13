@@ -570,7 +570,8 @@ body {
     width: 100%;
     padding: 0 5rem;
     transition-duration: 1s;
-    background-color: orange;
+    background: linear-gradient(90deg, white, #e9e8e8);
+    box-shadow: 1rem 1rem 3rem #e9e8e8;
 }
 
 .active {
@@ -681,7 +682,6 @@ body {
     align-items: flex-start;
     margin-bottom: 2rem;
     width: 35rem;
-    height: 20rem;
 }
 
 .title {
@@ -884,6 +884,7 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 4rem;
+    height: 30rem;
     width: 60rem;
 }
 
@@ -892,6 +893,28 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 35rem;
+}
+
+.courses__stack {
+    width: 35rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.courses__stack--JS {
+    border: 0.1rem solid #1eaaf1;
+    padding: 0 0.5rem;
+}
+
+.courses__stack--HTML5 {
+    border: 0.1rem solid #1eaaf1;
+    padding: 0 0.5rem;
+}
+
+.courses__stack--CSS3 {
+    border: 0.1rem solid #1eaaf1;
+    padding: 0 0.5rem;
 }
 
 /* vendor libs */

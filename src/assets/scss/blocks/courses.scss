@@ -17,6 +17,7 @@
 
       margin-bottom: 4rem;
 
+      height: 30rem;
       width: 60rem;
    }
 
@@ -27,5 +28,34 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+
+      width: 35rem;
+   }
+
+   // .courses__stack
+
+   &__stack {
+      width: 35rem;
+
+      display: flex;
+      justify-content: space-around;
+   }
+
+   &__stack--JS {
+      border: 0.1rem solid #1eaaf1;
+
+      padding: 0 0.5rem;
+   }
+
+   &__stack--HTML5 {
+      border: 0.1rem solid #1eaaf1;
+
+      padding: 0 0.5rem;
+   }
+
+   &__stack--CSS3 {
+      border: 0.1rem solid #1eaaf1;
+
+      padding: 0 0.5rem;
    }
 }

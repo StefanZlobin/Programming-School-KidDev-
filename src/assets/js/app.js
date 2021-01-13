@@ -1,3 +1,4 @@
 //= components/active.js
-//= components/animate-number.js
 //= components/navbar.js
+//= components/animate-content.js
+//= components/animate-number.js
