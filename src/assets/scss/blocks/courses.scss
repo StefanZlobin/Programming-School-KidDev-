@@ -1,0 +1,31 @@
+.courses {
+   // .courses__items
+
+   &__items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      margin-top: 10rem;
+   }
+
+   // .courses__item
+
+   &__item {
+      display: flex;
+      justify-content: center;
+
+      margin-bottom: 4rem;
+
+      width: 60rem;
+   }
+
+   // .courses__info
+
+   &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+   }
+}

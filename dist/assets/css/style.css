@@ -518,6 +518,17 @@ body {
     border-radius: 36rem;
 }
 
+.img__teachers {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 36rem;
+}
+
+.img__courses {
+    width: 25rem;
+    background-color: #1eaaf1;
+}
+
 .link {
     text-decoration: none;
     color: black;
@@ -559,7 +570,7 @@ body {
     width: 100%;
     padding: 0 5rem;
     transition-duration: 1s;
-    background-color: yellow;
+    background-color: orange;
 }
 
 .active {
@@ -588,6 +599,14 @@ body {
     background-image: url(/assets/img/banners/banner-experience.png);
 }
 
+.banner__teachers {
+    background-image: url(/assets/img/banners/banner-teachers.jpg);
+}
+
+.banner__courses {
+    background-image: url(/assets/img/banners/banner-courses.jpg);
+}
+
 .banner__enroll {
     background-image: url(/assets/img/banners/banner-enroll.jpg);
     margin-top: 5rem;
@@ -606,13 +625,9 @@ body {
 }
 
 .landing {
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.landing__body {
     padding: 0 10rem;
 }
 
@@ -675,6 +690,10 @@ body {
     margin-bottom: 3rem;
 }
 
+.title__courses {
+    margin: 0;
+}
+
 .button {
     width: 20rem;
     height: 8rem;
@@ -687,6 +706,11 @@ body {
 
 .button__about {
     margin-top: 10rem;
+}
+
+.button__courses {
+    width: 10rem;
+    height: 4rem;
 }
 
 .info {
@@ -833,6 +857,41 @@ body {
     padding: 5rem;
     display: flex;
     flex-direction: column;
+}
+
+.teachers__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+.teachers__item {
+    display: flex;
+    justify-content: space-between;
+    width: 60rem;
+    margin-bottom: 5rem;
+}
+
+.courses__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+.courses__item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    width: 60rem;
+}
+
+.courses__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* vendor libs */
