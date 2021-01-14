@@ -570,38 +570,38 @@ body {
     width: 100%;
     padding: 0 5rem;
     transition-duration: 1s;
-    background: linear-gradient(90deg, white, #e9e8e8);
+    background: linear-gradient(45deg, white, #e9e8e8);
     background-size: 200% 200%;
     box-shadow: 1rem 1rem 3rem #e9e8e8;
-    -webkit-animation: geadient 10s ease;
-    animation: geadient 10s ease;
+    -webkit-animation: geadient 10s ease infinite;
+    animation: geadient 10s ease infinite;
 }
 
 @-webkit-keyframes geadient {
     0% {
-        background-position: 10% 0;
+        background-position: 0 50%;
     }
 
     50% {
-        background-position: 50% 0;
+        background-position: 100% 50%;
     }
 
     100% {
-        background-position: 100% 0;
+        background-position: 0 50%;
     }
 }
 
 @keyframes geadient {
     0% {
-        background-position: 10% 0;
+        background-position: 0 50%;
     }
 
     50% {
-        background-position: 50% 0;
+        background-position: 100% 50%;
     }
 
     100% {
-        background-position: 100% 0;
+        background-position: 0 50%;
     }
 }
 
