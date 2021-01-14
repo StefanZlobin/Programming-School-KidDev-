@@ -17,10 +17,10 @@
       "gulp-sass": "^4.1.0",
       "gulp-strip-css-comments": "^2.0.0",
       "gulp-uglify": "^3.0.2",
+      "jquery": "^3.5.1",
       "panini": "^1.7.1"
    },
    "dependencies": {
-      "jquery": "^3.5.1",
       "slick-carousel": "^1.8.1"
    }
 }

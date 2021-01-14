@@ -700,7 +700,7 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     transform: translate(0rem, 120%);
-    opacity: 1;
+    opacity: 0;
     transition: all 0.8s ease 0s;
 }
 
