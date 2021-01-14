@@ -575,6 +575,7 @@ body {
     box-shadow: 1rem 1rem 3rem #e9e8e8;
     -webkit-animation: geadient 10s ease infinite;
     animation: geadient 10s ease infinite;
+    z-index: 999999;
 }
 
 @-webkit-keyframes geadient {

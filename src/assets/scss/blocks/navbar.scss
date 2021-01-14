@@ -40,6 +40,8 @@
    box-shadow: 1rem 1rem 3rem rgb(233, 232, 232);
 
    animation: geadient 10s ease infinite;
+
+   z-index: 999999;
 }
 
 @keyframes geadient {
