@@ -571,7 +571,38 @@ body {
     padding: 0 5rem;
     transition-duration: 1s;
     background: linear-gradient(90deg, white, #e9e8e8);
+    background-size: 200% 200%;
     box-shadow: 1rem 1rem 3rem #e9e8e8;
+    -webkit-animation: geadient 10s ease;
+    animation: geadient 10s ease;
+}
+
+@-webkit-keyframes geadient {
+    0% {
+        background-position: 10% 0;
+    }
+
+    50% {
+        background-position: 50% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes geadient {
+    0% {
+        background-position: 10% 0;
+    }
+
+    50% {
+        background-position: 50% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
 }
 
 .active {
@@ -668,6 +699,14 @@ body {
     color: #858585;
     font-size: 1.6rem;
     font-weight: 400;
+    transform: translate(0rem, 120%);
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+}
+
+.animation {
+    transform: translate(0rem, 0rem);
+    opacity: 1;
 }
 
 .offers {
@@ -902,17 +941,7 @@ body {
     justify-content: space-around;
 }
 
-.courses__stack--JS {
-    border: 0.1rem solid #1eaaf1;
-    padding: 0 0.5rem;
-}
-
-.courses__stack--HTML5 {
-    border: 0.1rem solid #1eaaf1;
-    padding: 0 0.5rem;
-}
-
-.courses__stack--CSS3 {
+.courses__stack--item {
     border: 0.1rem solid #1eaaf1;
     padding: 0 0.5rem;
 }

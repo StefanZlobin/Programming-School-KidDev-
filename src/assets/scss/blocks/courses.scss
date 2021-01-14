@@ -41,19 +41,7 @@
       justify-content: space-around;
    }
 
-   &__stack--JS {
-      border: 0.1rem solid #1eaaf1;
-
-      padding: 0 0.5rem;
-   }
-
-   &__stack--HTML5 {
-      border: 0.1rem solid #1eaaf1;
-
-      padding: 0 0.5rem;
-   }
-
-   &__stack--CSS3 {
+   &__stack--item {
       border: 0.1rem solid #1eaaf1;
 
       padding: 0 0.5rem;
