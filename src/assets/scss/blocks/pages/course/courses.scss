@@ -1,0 +1,121 @@
+.courses {
+   display: flex;
+   justify-content: center;
+
+   // .courses__items
+
+   &__items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      margin: 5rem 0;
+   }
+
+   // .courses__item
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      width: 40rem;
+      height: 20rem;
+
+      border-radius: 1rem;
+
+      box-sizing: border-box;
+      margin: 0 1rem 2rem 0;
+      padding: 2rem 0 2rem 2rem;
+
+      cursor: pointer;
+   }
+
+   &__item:nth-child(5n + 1) {
+      background: linear-gradient(65deg, #fee75d, #ec5ba9);
+      background-size: 200% 200%;
+
+      animation: geadient 5s linear infinite;
+   }
+
+   &__item:nth-child(5n + 2) {
+      background: linear-gradient(45deg, #5981a6, #bfff8d);
+      background-size: 200% 200%;
+
+      animation: geadient 5s linear infinite;
+   }
+
+   &__item:nth-child(5n + 3) {
+      background: linear-gradient(90deg, #476efc, #62c5fa);
+      background-size: 200% 200%;
+
+      animation: geadient 5s linear infinite;
+   }
+
+   &__item:nth-child(5n + 4) {
+      background: linear-gradient(80deg, #fc9fc4, #7f56f6);
+      background-size: 200% 200%;
+
+      animation: geadient 5s linear infinite;
+   }
+
+   &__item:nth-child(5n + 5) {
+      background: linear-gradient(125deg, #4edeea, #d968ff);
+      background-size: 200% 200%;
+
+      animation: geadient 5s linear infinite;
+   }
+
+   // .courses__img
+
+   &__img {
+      width: 4rem;
+      height: 4rem;
+
+      object-fit: cover;
+   }
+
+   // .courses__info
+
+   &__info {
+   }
+
+   // .courses__title
+
+   &__title {
+      color: whitesmoke;
+   }
+
+   // .courses__name
+
+   &__name {
+      font-size: 2.2rem;
+      font-weight: 700;
+   }
+
+   // .courses__button
+
+   &__button {
+      color: black;
+
+      margin: 0 2rem 0 0;
+
+      transform: translate(0rem, 130%);
+      opacity: 0;
+      transition: all 1s ease 0s;
+
+      background: linear-gradient(45deg, rgb(255, 255, 255), rgb(233, 232, 232));
+      background-size: 200% 200%;
+      box-shadow: 1rem 1rem 3rem rgb(233, 232, 232);
+
+      animation: geadient 5s linear infinite;
+
+      border: none;
+      border-radius: 2rem;
+   }
+
+   .courses__item:hover .courses__button--active {
+      transform: translate(0rem, 0rem);
+      opacity: 1;
+   }
+}

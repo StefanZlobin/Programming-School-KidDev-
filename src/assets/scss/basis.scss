@@ -1,0 +1,39 @@
+html {
+   font-size: 65.2%;
+}
+
+body {
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+   font-size: 1.6rem;
+   font-weight: 400;
+   line-height: 1.8;
+}
+
+.page {
+   min-height: 100vh;
+
+   display: flex;
+   flex-direction: column;
+}
+
+.main {
+   flex-grow: 1;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.footer {
+   flex-shrink: 0;
+}
+
+.container {
+   padding: 0 5rem;
+}
+
+.link {
+   color: #000;
+   text-decoration: none;
+}

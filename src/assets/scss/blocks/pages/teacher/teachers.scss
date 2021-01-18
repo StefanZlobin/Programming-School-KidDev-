@@ -1,0 +1,62 @@
+.teachers {
+   display: flex;
+   justify-content: center;
+
+   // .teachers__items
+
+   &__items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+
+   // .teachers__item
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 30rem;
+
+      margin: 3rem 0;
+   }
+
+   // .teachers__img
+
+   &__img {
+      width: 30rem;
+
+      background-color: #1eaaf1;
+   }
+
+   // .teachers__info
+
+   &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   // .teachers__name
+
+   &__name {
+      font-size: 2rem;
+      font-weight: 500;
+      color: #000;
+   }
+
+   // .teachers__direction
+
+   &__direction {
+      color: #858585;
+   }
+
+   // .teachers__description
+
+   &__description {
+      color: #9b9b9b;
+   }
+}
+
+/* media */

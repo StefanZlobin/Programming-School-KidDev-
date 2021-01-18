@@ -1,0 +1,84 @@
+.banner {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   width: 100%;
+
+   padding: 10rem 0;
+
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+   // .banner__about
+
+   &__about {
+      background-image: url(/assets/img/banners/banner-about.jpg);
+   }
+
+   // .banner__experience
+
+   &__experience {
+      background-image: url(/assets/img/banners/banner-experience.png);
+
+      padding: 0;
+   }
+
+   // .banner__teachers
+
+   &__teachers {
+      background-image: url(/assets/img/banners/banner-teachers.jpg);
+   }
+
+   // .banner__courses
+
+   &__courses {
+      background-image: url(/assets/img/banners/banner-courses.jpg);
+   }
+
+   // .banner__blog
+
+   &__blog {
+      background-image: url(/assets/img/banners/banner-enroll.jpg);
+   }
+
+   // .banner__contact
+
+   &__contact {
+      background-image: url(/assets/img/banners/banner-about.jpg);
+   }
+
+   // .banner__enroll
+
+   &__enroll {
+      background-image: url(/assets/img/banners/banner-enroll.jpg);
+
+      padding: 0;
+   }
+
+   // .banner__title
+
+   &__title {
+      font-size: 3.4rem;
+      font-weight: 900;
+      color: white;
+   }
+
+   // .banner__subtitle
+
+   &__subtitle {
+      color: white;
+
+      border-bottom: 1px solid wheat;
+   }
+
+   // .banner__link
+
+   &__link {
+      color: white;
+
+      margin-right: 2rem;
+   }
+}

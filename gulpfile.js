@@ -38,7 +38,7 @@ var path =
    {
       html: "src/**/*.html",
       js: "src/assets/js/**/*.js",
-      css: "src/assets/scss/**/*.scss",
+      css: "src/assets/scss/**/**/*.scss",
       images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,webp}"
    },
    clean: "./dist"

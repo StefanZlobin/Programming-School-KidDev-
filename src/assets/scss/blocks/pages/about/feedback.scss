@@ -1,0 +1,154 @@
+.feedback {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   padding: 5rem 0;
+
+   // .feedback__title
+
+   &__title {
+      font-size: 4.4rem;
+      font-weight: 600;
+   }
+
+   // .feedback__title--green
+
+   &__title--green {
+      color: greenyellow;
+   }
+
+   // .feedback__title--blue
+
+   &__title--blue {
+      color: #1eaaf1;
+   }
+
+   // .feedback__subtitle
+
+   &__subtitle {
+      font-size: 2.4rem;
+      font-weight: 600;
+   }
+
+   // .feedback__link
+
+   &__link {
+   }
+
+   // .feedback__items
+
+   &__items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: 5rem;
+   }
+
+   // .feedback__item
+
+   &__item {
+      opacity: 0.6;
+
+      width: 41rem;
+
+      display: flex;
+      justify-content: space-between;
+
+      margin-right: 2rem;
+   }
+
+   &__item:nth-child(3n + 2) {
+      opacity: 1;
+
+      font-size: 1.8rem;
+      color: #000;
+   }
+
+   // .feedback__img
+
+   &__img {
+      object-fit: cover;
+
+      width: 12rem;
+      height: 12rem;
+
+      border-radius: 50%;
+
+      margin-right: 1rem;
+   }
+
+   // .feedback__info
+
+   &__info {
+   }
+
+   // .feedback__text
+
+   &__text {
+      color: rgb(23, 13, 13);
+   }
+
+   // .feedback__name
+
+   &__name {
+      margin-top: 2rem;
+   }
+
+   // .feedback__parent
+
+   &__parent {
+      color: #1eaaf1;
+   }
+}
+
+/* media */
+
+@media (min-width: 950px) and (max-width: 1400px) {
+   .feedback__items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: 5rem;
+   }
+   .feedback__item {
+      display: none;
+
+      opacity: 1;
+      font-size: 1.8rem;
+      color: #000;
+   }
+
+   .feedback__item:nth-child(1),
+   .feedback__item:nth-child(2) {
+      display: block;
+   }
+}
+
+@media (max-width: 950px) {
+   .feedback__item {
+      display: none;
+
+      opacity: 1;
+      font-size: 1.8rem;
+      color: #000;
+   }
+
+   .feedback__item:nth-child(2) {
+      display: block;
+
+      display: flex;
+      justify-content: space-between;
+
+      width: 90%;
+   }
+}
+
+@media (max-width: 767px) {
+   .feedback__title {
+      font-size: 3rem;
+      font-weight: 500;
+   }
+}

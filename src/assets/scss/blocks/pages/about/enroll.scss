@@ -1,0 +1,37 @@
+.enroll {
+   background-color: #1eaaf1;
+
+   box-sizing: border-box;
+
+   margin-left: 55%;
+   padding: 5rem;
+
+   display: flex;
+   flex-direction: column;
+
+   // .enroll__title
+
+   &__title {
+      font-size: 4.4rem;
+      font-weight: 600;
+      color: #fff;
+   }
+
+   // .enroll__subtitle
+
+   &__subtitle {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #fff;
+
+      margin-bottom: 5rem;
+   }
+}
+
+/* media */
+
+@media (max-width: 1250px) {
+   .enroll {
+      margin: 0;
+   }
+}

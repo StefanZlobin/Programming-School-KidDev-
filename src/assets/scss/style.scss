@@ -1,57 +1,43 @@
+/* Подключение основных файлов */
 @import "vars";
 @import "vendor/reset";
 
-html {
-   font-size: 65.2%;
-}
+/* Подключение основных стилей */
+@import "basis";
 
-body {
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-   font-size: 1.6rem;
-   font-weight: 400;
-   line-height: 1.8;
-}
+/* Подключение стилей блоков */
 
-.page {
-   min-height: 100vh;
+/*---Подключение стилей блоков partials---*/
+@import "blocks/partials/header";
+@import "blocks/partials/footer";
 
-   display: flex;
-   flex-direction: column;
-}
+/*---Подключение стилей блоков страниц---*/
 
-.main {
-   flex-grow: 1;
+/*------ About page ------*/
+@import "blocks/pages/about/about";
+@import "blocks/pages/about/experience";
+@import "blocks/pages/about/feedback";
+@import "blocks/pages/about/enroll";
 
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
+/*------ Teachers page ------*/
+@import "blocks/pages/teacher/teachers";
 
-.footer {
-   flex-shrink: 0;
-}
+/*------ Courses page ------*/
+@import "blocks/pages/course/courses";
 
-/* blocks */
-@import "blocks/header";
-@import "blocks/img";
-@import "blocks/link";
-@import "blocks/navbar";
-@import "blocks/active";
-@import "blocks/banner";
-@import "blocks/landing";
-@import "blocks/about";
-@import "blocks/description";
-@import "blocks/offer";
-@import "blocks/title";
-@import "blocks/button";
-@import "blocks/info";
-@import "blocks/color-text";
-@import "blocks/feedback";
-@import "blocks/form";
-@import "blocks/enroll";
-@import "blocks/footer";
-@import "blocks/teachers";
-@import "blocks/courses";
+/*------ Blogs page ------*/
+@import "blocks/pages/blog/blog";
 
-/* vendor libs */
+/*------ Contacts page ------*/
+@import "blocks/pages/contact/contact";
+
+/*------ Enroll page ------*/
+@import "blocks/pages/enroll/enroll";
+
+/*---Подключение стилей независимых универсальных блоков---*/
+@import "blocks/block/banner";
+@import "blocks/block/form";
+@import "blocks/block/button";
+@import "blocks/block/css-animation";
+
+/* Подключение вендорных библиотек */

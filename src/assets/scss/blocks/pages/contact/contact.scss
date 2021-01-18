@@ -1,0 +1,27 @@
+.contact {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   margin: 5rem 0;
+
+   // .contact__title
+
+   &__title {
+      font-size: 4.4rem;
+      font-weight: 600;
+   }
+
+   // .contact__form
+
+   &__form {
+      background-color: #fafafa;
+
+      padding: 5rem;
+   }
+
+   &__form form input::placeholder,
+   &__form form textarea::placeholder {
+      color: #000;
+   }
+}
