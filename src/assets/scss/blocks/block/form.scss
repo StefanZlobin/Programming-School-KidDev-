@@ -57,3 +57,25 @@
       resize: none;
    }
 }
+
+@media (max-width: 563px) {
+   .form {
+      height: 25rem;
+   }
+
+   .form__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .form__item {
+      margin-bottom: 1rem;
+   }
+}
+
+@media (min-width: 373px) and (max-width: 767px) {
+   .form__column {
+      margin-right: 0;
+   }
+}

@@ -152,3 +152,9 @@
       font-weight: 500;
    }
 }
+
+@media (min-width: 373px) and (max-width: 767px) {
+   .feedback {
+      display: none;
+   }
+}

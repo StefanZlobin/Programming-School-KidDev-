@@ -35,3 +35,13 @@
       margin: 0;
    }
 }
+
+@media (min-width: 373px) and (max-width: 767px) {
+   .enroll__title {
+      font-size: 3.4rem;
+   }
+
+   .enroll {
+      width: 100%;
+   }
+}

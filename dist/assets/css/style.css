@@ -457,6 +457,7 @@ body {
 
 .page {
     min-height: 100vh;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -785,6 +786,25 @@ body {
     }
 }
 
+@media (min-width: 373px) and (max-width: 767px) {
+    .about__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30rem;
+    }
+
+    .about__img {
+        margin-right: 0;
+    }
+}
+
 .experience {
     display: flex;
     flex-direction: column;
@@ -858,6 +878,13 @@ body {
     .experience__subtitle {
         font-size: 3rem;
         font-weight: 600;
+    }
+}
+
+@media (min-width: 373px) and (max-width: 767px) {
+    .experience__title,
+  .experience__subtitle {
+        font-size: 2.2rem;
     }
 }
 
@@ -973,6 +1000,12 @@ body {
     }
 }
 
+@media (min-width: 373px) and (max-width: 767px) {
+    .feedback {
+        display: none;
+    }
+}
+
 .enroll {
     background-color: #1eaaf1;
     box-sizing: border-box;
@@ -999,6 +1032,16 @@ body {
 @media (max-width: 1250px) {
     .enroll {
         margin: 0;
+    }
+}
+
+@media (min-width: 373px) and (max-width: 767px) {
+    .enroll__title {
+        font-size: 3.4rem;
+    }
+
+    .enroll {
+        width: 100%;
     }
 }
 
@@ -1065,7 +1108,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40rem;
+    max-width: 40rem;
+    min-width: 30rem;
     height: 20rem;
     border-radius: 1rem;
     box-sizing: border-box;
@@ -1290,6 +1334,28 @@ body {
 
 .form__item[textarea] {
     resize: none;
+}
+
+@media (max-width: 563px) {
+    .form {
+        height: 25rem;
+    }
+
+    .form__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form__item {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 373px) and (max-width: 767px) {
+    .form__column {
+        margin-right: 0;
+    }
 }
 
 @keyframes geadient {

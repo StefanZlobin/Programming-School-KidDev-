@@ -90,3 +90,10 @@
       font-weight: 600;
    }
 }
+
+@media (min-width: 373px) and (max-width: 767px) {
+   .experience__title,
+   .experience__subtitle {
+      font-size: 2.2rem;
+   }
+}

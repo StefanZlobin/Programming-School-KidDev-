@@ -141,3 +141,23 @@
       flex-wrap: wrap;
    }
 }
+
+@media (min-width: 373px) and (max-width: 767px) {
+   .about__items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .about__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 30rem;
+   }
+
+   .about__img {
+      margin-right: 0;
+   }
+}
