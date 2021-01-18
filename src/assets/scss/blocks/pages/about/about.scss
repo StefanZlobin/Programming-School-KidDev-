@@ -109,11 +109,16 @@
       font-size: 1.6rem;
       font-weight: 400;
       color: #858585;
+
+      transform: translate(0rem, 130%);
+      opacity: 0;
+      transition: all 1s ease 0s;
    }
 
    // .about__button
 
    &__button {
+      margin-top: 20rem;
    }
 }
 
@@ -159,5 +164,9 @@
 
    .about__img {
       margin-right: 0;
+   }
+
+   .about__button {
+      margin-top: 2rem;
    }
 }

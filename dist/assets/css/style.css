@@ -560,7 +560,7 @@ body {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    transition-duration: 1s;
+    transition: all 0.5s linear 0s;
     background: linear-gradient(45deg, white, #e9e8e8);
     background-size: 200% 200%;
     box-shadow: 1rem 1rem 3rem #e9e8e8;
@@ -761,6 +761,13 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     color: #858585;
+    transform: translate(0rem, 130%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.about__button {
+    margin-top: 20rem;
 }
 
 /* media */
@@ -802,6 +809,10 @@ body {
 
     .about__img {
         margin-right: 0;
+    }
+
+    .about__button {
+        margin-top: 2rem;
     }
 }
 
@@ -1066,7 +1077,7 @@ body {
 }
 
 .teachers__img {
-    width: 30rem;
+    width: 20rem;
     background-color: #1eaaf1;
 }
 
@@ -1084,10 +1095,16 @@ body {
 
 .teachers__direction {
     color: #858585;
+    transform: translate(0rem, 110%);
+    opacity: 1;
+    transition: all 1s ease 0s;
 }
 
 .teachers__description {
     color: #9b9b9b;
+    transform: translate(0rem, 110%);
+    opacity: 0;
+    transition: all 1s ease 0s;
 }
 
 /* media */
@@ -1108,8 +1125,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 40rem;
-    min-width: 30rem;
+    width: 40rem;
     height: 20rem;
     border-radius: 1rem;
     box-sizing: border-box;
@@ -1167,6 +1183,9 @@ body {
 .courses__name {
     font-size: 2.2rem;
     font-weight: 700;
+    transform: translate(0rem, 130%);
+    opacity: 0;
+    transition: all 1s ease 0s;
 }
 
 .courses__button {
@@ -1174,12 +1193,12 @@ body {
     margin: 0 2rem 0 0;
     transform: translate(0rem, 130%);
     opacity: 0;
-    transition: all 1s ease 0s;
+    transition: all 0.5s ease 0s;
     background: linear-gradient(45deg, white, #e9e8e8);
     background-size: 200% 200%;
     box-shadow: 1rem 1rem 3rem #e9e8e8;
-    -webkit-animation: geadient 5s linear infinite;
-    animation: geadient 5s linear infinite;
+    -webkit-animation: geadient 1s linear infinite;
+    animation: geadient 1s linear infinite;
     border: none;
     border-radius: 2rem;
 }
@@ -1187,6 +1206,19 @@ body {
 .courses .courses__item:hover .courses__button--active {
     transform: translate(0rem, 0rem);
     opacity: 1;
+}
+
+.courses__age {
+    transform: translate(0rem, 130%);
+    opacity: 0;
+    transition: all 1s ease 0.5s;
+}
+
+/* media */
+@media (max-width: 450px) {
+    .courses__item {
+        width: 30rem;
+    }
 }
 
 /*------ Blogs page ------*/
@@ -1358,6 +1390,18 @@ body {
     }
 }
 
+.button {
+    background-color: #fda638;
+    border-radius: 5rem;
+    border: none;
+    padding: 2rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* keyframes */
 @keyframes geadient {
     0% {
         background-position: 0 50%;
@@ -1370,6 +1414,11 @@ body {
     100% {
         background-position: 0 50%;
     }
+}
+
+.animation__active {
+    transform: translate(0rem, 0rem);
+    opacity: 1;
 }
 
 /* Подключение вендорных библиотек */

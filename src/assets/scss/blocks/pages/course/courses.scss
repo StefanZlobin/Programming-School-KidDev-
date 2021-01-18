@@ -19,8 +19,7 @@
       flex-direction: column;
       justify-content: space-between;
 
-      max-width: 40rem;
-      min-width: 30rem;
+      width: 40rem;
       height: 20rem;
 
       border-radius: 1rem;
@@ -92,6 +91,10 @@
    &__name {
       font-size: 2.2rem;
       font-weight: 700;
+
+      transform: translate(0rem, 130%);
+      opacity: 0;
+      transition: all 1s ease 0s;
    }
 
    // .courses__button
@@ -103,13 +106,13 @@
 
       transform: translate(0rem, 130%);
       opacity: 0;
-      transition: all 1s ease 0s;
+      transition: all 0.5s ease 0s;
 
       background: linear-gradient(45deg, rgb(255, 255, 255), rgb(233, 232, 232));
       background-size: 200% 200%;
       box-shadow: 1rem 1rem 3rem rgb(233, 232, 232);
 
-      animation: geadient 5s linear infinite;
+      animation: geadient 1s linear infinite;
 
       border: none;
       border-radius: 2rem;
@@ -118,5 +121,21 @@
    .courses__item:hover .courses__button--active {
       transform: translate(0rem, 0rem);
       opacity: 1;
+   }
+
+   // .courses__age
+
+   &__age {
+      transform: translate(0rem, 130%);
+      opacity: 0;
+      transition: all 1s ease 0.5s;
+   }
+}
+
+/* media */
+
+@media (max-width: 450px) {
+   .courses__item {
+      width: 30rem;
    }
 }
