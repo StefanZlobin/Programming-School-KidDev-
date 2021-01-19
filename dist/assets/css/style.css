@@ -466,7 +466,6 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .footer {
@@ -1372,6 +1371,51 @@ body {
     }
 }
 
+.courses-detailed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.courses-detailed__title {
+    font-size: 4.4rem;
+    font-weight: 900;
+}
+
+.courses-detailed__subtitle {
+    font-size: 3.4rem;
+    font-weight: 600;
+}
+
+.courses-detailed__items {
+    margin: 0 auto;
+}
+
+.courses-detailed__description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses-detailed__row {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 3rem 5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.courses-detailed__row:hover {
+    background-color: #c1bfd1;
+}
+
+.courses-detailed__active {
+    background: #918db8;
+}
+
+.courses-detailed__row:hover.courses-detailed__active {
+    background-color: #918db8;
+}
+
 /*------ Blogs page ------*/
 /*------ Contacts page ------*/
 .contact {
@@ -1435,6 +1479,10 @@ body {
     background-image: url(/assets/img/banners/banner-courses.jpg);
 }
 
+.banner__frontend {
+    background-image: url(/assets/img/courses-page/01.png);
+}
+
 .banner__blog {
     background-image: url(/assets/img/banners/banner-enroll.jpg);
 }
@@ -1454,6 +1502,10 @@ body {
     color: white;
 }
 
+.banner__title--black {
+    color: #000;
+}
+
 .banner__subtitle {
     color: white;
     border-bottom: 1px solid wheat;
@@ -1462,6 +1514,39 @@ body {
 .banner__link {
     color: white;
     margin-right: 2rem;
+}
+
+.banner__buttons {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner__info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 4rem;
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 2rem 0;
+}
+
+.banner__columm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner__row {
+    color: #232323;
+    text-align: center;
+}
+
+.banner__row:nth-child(2) {
+    color: #000;
+    font-weight: 800;
 }
 
 .form {
@@ -1550,6 +1635,11 @@ body {
     color: #fff;
     font-weight: 400;
     text-align: center;
+}
+
+.button:nth-child(2) {
+    margin-left: 4rem;
+    background-color: #1eaaf1;
 }
 
 /* keyframes */

@@ -24,6 +24,20 @@
 
 /*------ Courses page ------*/
 @import "blocks/pages/course/courses";
+@import "blocks/pages/course/courses-detailed";
+
+@import "blocks/pages/course/back-course";
+@import "blocks/pages/course/basis-course";
+@import "blocks/pages/course/c-course";
+@import "blocks/pages/course/eng-course";
+@import "blocks/pages/course/front-course";
+@import "blocks/pages/course/game-course";
+@import "blocks/pages/course/js-course";
+@import "blocks/pages/course/kid-course";
+@import "blocks/pages/course/pc-course";
+@import "blocks/pages/course/php-course";
+@import "blocks/pages/course/python-course";
+@import "blocks/pages/course/web-course";
 
 /*------ Blogs page ------*/
 @import "blocks/pages/blog/blog";

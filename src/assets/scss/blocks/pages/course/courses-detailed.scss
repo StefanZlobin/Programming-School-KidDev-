@@ -1,0 +1,68 @@
+.courses-detailed {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+
+   // .courses-detailed__title
+
+   &__title {
+      font-size: 4.4rem;
+      font-weight: 900;
+   }
+
+   // .courses-detailed__subtitle
+
+   &__subtitle {
+      font-size: 3.4rem;
+      font-weight: 600;
+   }
+
+   // .courses-detailed__items
+
+   &__items {
+      margin: 0 auto;
+   }
+
+   // .courses-detailed__item
+
+   &__item {
+   }
+
+   // .courses-detailed__description
+
+   &__description {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   // .courses-detailed__column
+
+   &__column {
+   }
+
+   // .courses-detailed__row
+
+   &__row {
+      background-color: #fff;
+
+      border-radius: 0.5rem;
+
+      padding: 3rem 5rem;
+
+      text-align: center;
+
+      cursor: pointer;
+   }
+
+   &__row:hover {
+      background-color: #c1bfd1;
+   }
+
+   &__active {
+      background: #918db8;
+   }
+
+   &__row:hover.courses-detailed__active {
+      background-color: #918db8;
+   }
+}

@@ -4,4 +4,5 @@
 //= components/fixedNavbar.js
 //= components/burger.js
 //= components/activeItemNavbar.js
+//= components/activeItemCourse.js
 //= components/animateNumber.js
