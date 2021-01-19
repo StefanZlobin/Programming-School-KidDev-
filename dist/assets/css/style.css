@@ -681,6 +681,114 @@ body {
     }
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 5rem;
+    background-color: #232323;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.footer__title {
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.footer__feedback {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__feedback:last-child {
+    margin-bottom: 0;
+}
+
+.footer__img {
+    width: 3rem;
+}
+
+.footer__blog {
+    display: flex;
+    justify-content: space-between;
+    width: 25rem;
+    margin-bottom: 3rem;
+}
+
+.footer__img-blog {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.footer__blog-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__blog-title {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.footer__blog-date {
+    color: #9b9b9b;
+    font-size: 1.2rem;
+}
+
+.footer__items {
+    list-style: square;
+    color: #fff;
+}
+
+.footer__link {
+    color: #9b9b9b;
+}
+
+.footer__link:hover {
+    color: #fff;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__img-social {
+    width: 5rem;
+    height: 5rem;
+}
+
+.footer__copyright {
+    color: #fff;
+    margin: 0 auto;
+}
+
 /*---Подключение стилей блоков страниц---*/
 /*------ About page ------*/
 .about {
@@ -1095,7 +1203,7 @@ body {
 
 .teachers__direction {
     color: #858585;
-    transform: translate(0rem, 110%);
+    transform: translate(0rem, 150%);
     opacity: 1;
     transition: all 1s ease 0s;
 }
@@ -1130,7 +1238,7 @@ body {
     border-radius: 1rem;
     box-sizing: border-box;
     margin: 0 1rem 2rem 0;
-    padding: 2rem 0 2rem 2rem;
+    padding: 2rem;
     cursor: pointer;
 }
 
@@ -1180,7 +1288,50 @@ body {
     color: whitesmoke;
 }
 
+.courses__tooltip {
+    background-color: #000;
+    font-size: 1.6rem;
+    color: #fff;
+    border-radius: 100%;
+    padding: 0.4rem 1.5rem;
+    z-index: 9999;
+}
+
+.courses__tooltip:before, .courses__tooltip:after {
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+    top: -9rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.courses__tooltip:before {
+    content: attr(data-tooltip);
+    box-sizing: border-box;
+    padding: 1rem 0;
+    width: 20rem;
+    height: 9rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 1rem;
+}
+
+.courses__tooltip:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.courses__tooltip:after {
+    visibility: visible;
+    opacity: 1;
+}
+
 .courses__name {
+    display: flex;
+    justify-content: space-between;
     font-size: 2.2rem;
     font-weight: 700;
     transform: translate(0rem, 130%);

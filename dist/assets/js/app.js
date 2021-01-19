@@ -5,6 +5,13 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 
 const animItems = document.querySelectorAll('.animation');
 
+function offset(el) {
+   const rect = el.getBoundingClientRect(),
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+   return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+}
+
 if (animItems.length > 0) {
    window.addEventListener('scroll', animOnScroll);
 
@@ -24,18 +31,11 @@ if (animItems.length > 0) {
          if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
             animItem.classList.add('animation__active')
          } else {
-            if (!animItem.classList.contains('animation-no-hide')) {
+            if (!animItem.classList.contains('animation__no')) {
                animItem.classList.remove('animation__active')
             }
          }
       }
-   }
-
-   function offset(el) {
-      const rect = el.getBoundingClientRect(),
-         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
    }
 
    setTimeout(() => {
@@ -63,15 +63,15 @@ $(function () {
       }
    });
 });
-var check = 1;
-var target = $('.experience__number'); // You counter class
-var targetPos = target.offset().top;
-var winHeight = $(window).height();
-var scrollToElem = targetPos - winHeight;
+let check = 1;
+let target = $('.experience__number');
+let targetPos = target.offset().top;
+let winHeight = $(window).height();
+let scrollToElem = targetPos - winHeight;
 
 
 $(window).scroll(function () {
-   var winScrollTop = $(this).scrollTop();
+   let winScrollTop = $(this).scrollTop();
    if (winScrollTop > scrollToElem && check) {
       $('.experience__number').each(function () {
          $(this).prop('Counter', -1).animate({

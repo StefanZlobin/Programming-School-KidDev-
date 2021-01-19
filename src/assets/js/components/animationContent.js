@@ -1,5 +1,12 @@
 const animItems = document.querySelectorAll('.animation');
 
+function offset(el) {
+   const rect = el.getBoundingClientRect(),
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+   return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+}
+
 if (animItems.length > 0) {
    window.addEventListener('scroll', animOnScroll);
 
@@ -19,18 +26,11 @@ if (animItems.length > 0) {
          if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
             animItem.classList.add('animation__active')
          } else {
-            if (!animItem.classList.contains('animation-no-hide')) {
+            if (!animItem.classList.contains('animation__no')) {
                animItem.classList.remove('animation__active')
             }
          }
       }
-   }
-
-   function offset(el) {
-      const rect = el.getBoundingClientRect(),
-         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
    }
 
    setTimeout(() => {

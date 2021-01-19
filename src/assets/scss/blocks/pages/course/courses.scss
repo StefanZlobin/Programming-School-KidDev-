@@ -26,7 +26,7 @@
 
       box-sizing: border-box;
       margin: 0 1rem 2rem 0;
-      padding: 2rem 0 2rem 2rem;
+      padding: 2rem;
 
       cursor: pointer;
    }
@@ -86,9 +86,68 @@
       color: whitesmoke;
    }
 
+   // .courses__tooltip
+
+   &__tooltip {
+      background-color: #000;
+
+      font-size: 1.6rem;
+      color: #fff;
+
+      border-radius: 100%;
+
+      padding: 0.4rem 1.5rem;
+
+      z-index: 9999;
+   }
+
+   &__tooltip:before,
+   &__tooltip:after {
+      display: block;
+
+      position: absolute;
+      right: 1.5rem;
+      top: -9rem;
+
+      visibility: hidden;
+      opacity: 0;
+
+      transition: all 1s ease 0s;
+   }
+
+   &__tooltip:before {
+      content: attr(data-tooltip);
+
+      box-sizing: border-box;
+      padding: 1rem 0;
+
+      width: 20rem;
+      height: 9rem;
+
+      font-size: 1.2rem;
+      text-align: center;
+
+      background-color: rgba($color: #000000, $alpha: 0.85);
+
+      border-radius: 1rem;
+   }
+
+   &__tooltip:hover:before {
+      visibility: visible;
+      opacity: 1;
+   }
+
+   &__tooltip:after {
+      visibility: visible;
+      opacity: 1;
+   }
+
    // .courses__name
 
    &__name {
+      display: flex;
+      justify-content: space-between;
+
       font-size: 2.2rem;
       font-weight: 700;
 

@@ -1,12 +1,12 @@
-var check = 1;
-var target = $('.experience__number'); // You counter class
-var targetPos = target.offset().top;
-var winHeight = $(window).height();
-var scrollToElem = targetPos - winHeight;
+let check = 1;
+let target = $('.experience__number');
+let targetPos = target.offset().top;
+let winHeight = $(window).height();
+let scrollToElem = targetPos - winHeight;
 
 
 $(window).scroll(function () {
-   var winScrollTop = $(this).scrollTop();
+   let winScrollTop = $(this).scrollTop();
    if (winScrollTop > scrollToElem && check) {
       $('.experience__number').each(function () {
          $(this).prop('Counter', -1).animate({

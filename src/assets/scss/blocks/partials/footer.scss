@@ -1,0 +1,161 @@
+.footer {
+   display: flex;
+   flex-direction: column;
+   padding: 7rem 5rem;
+
+   background-color: #232323;
+
+   // .footer__row
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+
+   // .footer__column
+
+   &__column {
+      display: flex;
+      flex-direction: column;
+
+      margin-bottom: 5rem;
+   }
+
+   // .footer__title
+
+   &__title {
+      margin-bottom: 4rem;
+
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #fff;
+   }
+
+   // .footer__info
+
+   &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      color: #fff;
+   }
+
+   // .footer__feedback
+
+   &__feedback {
+      margin-bottom: 2rem;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__feedback:last-child {
+      margin-bottom: 0;
+   }
+
+   // .footer__img
+
+   &__img {
+      width: 3rem;
+   }
+
+   // .footer__blog
+
+   &__blog {
+      display: flex;
+      justify-content: space-between;
+
+      width: 25rem;
+
+      margin-bottom: 3rem;
+   }
+
+   // .footer__img-blog
+
+   &__img-blog {
+      object-fit: cover;
+
+      width: 8rem;
+      height: 8rem;
+
+      border-radius: 50%;
+
+      margin-right: 2rem;
+   }
+
+   // .footer__blog-info
+
+   &__blog-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   // .footer__blog-title
+
+   &__blog-title {
+      color: #fff;
+
+      margin-bottom: 1rem;
+   }
+
+   // .footer__blog-date
+
+   &__blog-date {
+      color: #9b9b9b;
+      font-size: 1.2rem;
+   }
+
+   // .footer__navbar
+
+   &__navbar {
+   }
+
+   // .footer__items
+
+   &__items {
+      list-style: square;
+
+      color: #fff;
+   }
+
+   // .footer__item
+
+   &__item {
+   }
+
+   // .footer__link
+
+   &__link {
+      color: #9b9b9b;
+   }
+
+   &__link:hover {
+      color: #fff;
+   }
+
+   // .footer__social
+
+   &__social {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   // .footer__img-social
+
+   &__img-social {
+      width: 5rem;
+      height: 5rem;
+   }
+
+   // .footer__copyright
+
+   &__copyright {
+      color: #fff;
+
+      margin: 0 auto;
+   }
+}
