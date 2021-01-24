@@ -1371,49 +1371,105 @@ body {
     }
 }
 
-.courses-detailed {
+.program {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    background-color: #f5f5f5;
 }
 
-.courses-detailed__title {
-    font-size: 4.4rem;
-    font-weight: 900;
+.program__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.courses-detailed__subtitle {
-    font-size: 3.4rem;
+.program__row {
+    display: flex;
+    width: 100rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid black;
+}
+
+.program__title {
+    font-size: 5.4rem;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    padding-left: 5rem;
+}
+
+.program__subtitle {
+    font-size: 3.2rem;
+    color: #000;
     font-weight: 600;
 }
 
-.courses-detailed__items {
-    margin: 0 auto;
+.program__number {
+    font-size: 5.4rem;
+    color: #000;
+    font-weight: 700;
+    margin-right: 8rem;
 }
 
-.courses-detailed__description {
+.program__row-content-title {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 2rem;
     display: flex;
     justify-content: space-between;
 }
 
-.courses-detailed__row {
-    background-color: #fff;
+.program__row-content-title:hover {
+    background-color: #e6e6e6;
+}
+
+.program .active {
+    background-color: #00c097;
+}
+
+.program .active .program__tooltip {
+    rotate: 90deg;
+    transition: all 0.5s ease 0s;
+}
+
+.program__row-content {
+    display: flex;
+}
+
+.program__row-content-menu {
+    margin-right: 8rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.program__row-content-show-by-click {
+    background-color: #e6e6e6;
     border-radius: 0.5rem;
-    padding: 3rem 5rem;
-    text-align: center;
-    cursor: pointer;
+    box-sizing: border-box;
+    width: 30rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.courses-detailed__row:hover {
-    background-color: #c1bfd1;
+.program__row-content-show-items-lvl2 {
+    padding: 1rem;
 }
 
-.courses-detailed__active {
-    background: #918db8;
+.program__row-content-show-items-lvl3 {
+    padding: 1.5rem;
 }
 
-.courses-detailed__row:hover.courses-detailed__active {
-    background-color: #918db8;
+.program__row-content-show-item {
+    list-style-type: square;
 }
 
 /*------ Blogs page ------*/

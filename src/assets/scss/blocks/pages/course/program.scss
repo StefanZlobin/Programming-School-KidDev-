@@ -1,0 +1,146 @@
+.program {
+   display: flex;
+   flex-direction: column;
+
+   background-color: #f5f5f5;
+
+   // .program__container
+
+   &__container {
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   // .program__row
+
+   &__row {
+      display: flex;
+
+      width: 100rem;
+
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+
+      border-bottom: 1px solid black;
+   }
+
+   // .program__title
+
+   &__title {
+      font-size: 5.4rem;
+      color: #000;
+      font-weight: 700;
+
+      margin-bottom: 4rem;
+      padding-left: 5rem;
+   }
+
+   // .program__subtitle
+
+   &__subtitle {
+      font-size: 3.2rem;
+      color: #000;
+      font-weight: 600;
+   }
+
+   // .program__number
+
+   &__number {
+      font-size: 5.4rem;
+      color: #000;
+      font-weight: 700;
+
+      margin-right: 8rem;
+   }
+
+   // .program__row-content-title
+
+   &__row-content-title {
+      background-color: #fff;
+
+      border-radius: 0.5rem;
+
+      margin-bottom: 1rem;
+      padding: 1rem 2rem;
+
+      cursor: pointer;
+
+      font-size: 2rem;
+
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__row-content-title:hover {
+      background-color: #e6e6e6;
+   }
+
+   .active {
+      background-color: #00c097;
+   }
+
+   .active .program__tooltip {
+      rotate: 90deg;
+      transition: all 0.5s ease 0s;
+   }
+
+   // .program__row-content
+
+   &__row-content {
+      display: flex;
+   }
+
+   // .program__row-content-menu
+
+   &__row-content-menu {
+      margin-right: 8rem;
+
+      width: 30rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+   }
+
+   // .program__row-content-show-by-click
+
+   &__row-content-show-by-click {
+      background-color: #e6e6e6;
+
+      border-radius: 0.5rem;
+
+      box-sizing: border-box;
+      width: 30rem;
+      padding: 5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   // .program__row-content-show-items
+
+   &__row-content-show-items {
+   }
+
+   // .program__row-content-show-items-lvl2
+
+   &__row-content-show-items-lvl2 {
+      padding: 1rem;
+   }
+
+   // .program__row-content-show-items-lvl3
+
+   &__row-content-show-items-lvl3 {
+      padding: 1.5rem;
+   }
+
+   // .program__row-content-show-item
+
+   &__row-content-show-item {
+      list-style-type: square;
+   }
+}
