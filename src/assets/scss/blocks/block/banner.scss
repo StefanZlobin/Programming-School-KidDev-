@@ -23,7 +23,7 @@
    &__experience {
       background-image: url(/assets/img/banners/banner-experience.png);
 
-      padding: 0;
+      padding: 5rem 0;
    }
 
    // .banner__teachers
@@ -62,6 +62,8 @@
       background-image: url(/assets/img/banners/banner-enroll.jpg);
 
       padding: 0;
+
+      min-height: 50rem;
    }
 
    // .banner__title
@@ -90,6 +92,7 @@
 
    &__link {
       color: white;
+      text-decoration: none;
 
       margin-right: 2rem;
    }

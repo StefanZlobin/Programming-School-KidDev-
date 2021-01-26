@@ -16,6 +16,8 @@ body {
 
    display: flex;
    flex-direction: column;
+
+   overflow: hidden;
 }
 
 .main {
@@ -30,10 +32,44 @@ body {
 }
 
 .container {
-   padding: 0 5rem;
+   max-width: 36rem;
+
+   margin: 0rem auto;
+   padding: 0 1.5rem;
 }
 
-.link {
-   color: #000;
-   text-decoration: none;
+@media (min-width: 767px) {
+   .container {
+      max-width: 76.8rem;
+
+      margin: 0rem auto;
+      padding: 0 1.5rem;
+   }
+}
+
+@media (min-width: 1024px) {
+   .container {
+      max-width: 102.4rem;
+
+      margin: 0rem auto;
+      padding: 0 1.5rem;
+   }
+}
+
+@media (min-width: 1200px) {
+   .container {
+      max-width: 120rem;
+
+      margin: 0rem auto;
+      padding: 0 1.5rem;
+   }
+}
+
+@media (min-width: 1350px) {
+   .container {
+      max-width: 138rem;
+
+      margin: 0rem auto;
+      padding: 0 1.5rem;
+   }
 }

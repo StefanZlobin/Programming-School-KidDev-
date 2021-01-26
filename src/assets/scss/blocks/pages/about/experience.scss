@@ -1,99 +1,85 @@
 .experience {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-
    // .experience__title
 
    &__title {
+      text-align: center;
       color: #adff2f;
-      font-size: 4.4rem;
-      font-weight: 600;
+      font-size: 2.4rem;
+      font-weight: 700;
+   }
+
+   @media (min-width: 767px) {
+      &__title {
+         font-size: 4.4rem;
+      }
    }
 
    // .experience__subtitle
 
    &__subtitle {
+      text-align: center;
       color: #000;
-      font-size: 4.4rem;
+      font-size: 2.4rem;
       font-weight: 600;
+   }
+
+   @media (min-width: 767px) {
+      &__subtitle {
+         font-size: 4rem;
+      }
    }
 
    // .experience__items
 
    &__items {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   @media (min-width: 1024px) {
+      &__items {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+      }
    }
 
    // .experience__item
 
    &__item {
-      width: 20rem;
-
-      color: #fff;
-
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
 
-      margin-right: 2rem;
+      color: #fff;
    }
 
-   &__item:last-child {
-      margin: 0;
+   @media (min-width: 1024px) {
+      &__item {
+         display: flex;
+         flex-wrap: wrap;
+
+         margin-right: 2rem;
+      }
+
+      &__item:last-child {
+         margin-right: 0;
+      }
    }
 
    // .experience__title--item
 
    &__title--item {
-      font-size: 2rem;
+      font-weight: 700;
    }
 
    // .experience__number
 
    &__number {
-      font-size: 4rem;
-      font-weight: 600;
-   }
-}
-
-/* media */
-
-@media (max-width: 900px) {
-   .experience__items {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .experience__item {
-      width: 30rem;
-
-      margin: 0;
-   }
-
-   .experience__title--item {
-      text-align: center;
-   }
-}
-
-@media (max-width: 767px) {
-   .experience__title {
-      font-size: 3rem;
-      font-weight: 600;
-   }
-
-   .experience__subtitle {
-      font-size: 3rem;
-      font-weight: 600;
-   }
-}
-
-@media (min-width: 373px) and (max-width: 767px) {
-   .experience__title,
-   .experience__subtitle {
-      font-size: 2.2rem;
+      font-weight: 900;
    }
 }

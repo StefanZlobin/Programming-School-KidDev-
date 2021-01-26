@@ -3,21 +3,46 @@
    flex-direction: column;
    justify-content: space-between;
 
-   height: 20rem;
-
    // .form__row
 
    &__row {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   @media (min-width: 767px) {
+      &__row {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+      }
+   }
+
+   @media (min-width: 1024px) {
+      &__row {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+      }
    }
 
    // .form__column
 
    &__column {
-      margin-right: 1rem;
+   }
 
-      align-items: center;
+   @media (min-width: 767px) {
+      &__column {
+         margin-bottom: 1rem;
+         margin-right: 1rem;
+      }
+   }
+
+   @media (min-width: 1024px) {
+      &__column {
+         margin-right: 3rem;
+      }
    }
 
    // .form__item
@@ -33,8 +58,15 @@
       transition: 0.3s;
 
       padding: 0 0 1rem 0;
+      margin-bottom: 1.5rem;
 
       appearance: none;
+   }
+
+   @media (min-width: 767px) {
+      &__item {
+         margin-bottom: 3rem;
+      }
    }
 
    &__item::placeholder {
@@ -55,27 +87,5 @@
 
    &__item[textarea] {
       resize: none;
-   }
-}
-
-@media (max-width: 563px) {
-   .form {
-      height: 25rem;
-   }
-
-   .form__row {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .form__item {
-      margin-bottom: 1rem;
-   }
-}
-
-@media (min-width: 373px) and (max-width: 767px) {
-   .form__column {
-      margin-right: 0;
    }
 }
