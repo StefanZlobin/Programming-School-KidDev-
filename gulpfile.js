@@ -41,7 +41,7 @@ var path =
       css: "src/assets/scss/**/**/*.scss",
       images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
    },
-   clean: "./dist"
+   clean: "./dist/"
 }
 
 
@@ -133,8 +133,7 @@ function js() {
 }
 
 function images() {
-   return src(path.src.images)
-      .pipe(imagemin())
+   return src(path.src.images, { base: './src/assets/img/' })
       .pipe(dest(path.build.images))
 }
 

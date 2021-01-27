@@ -1673,36 +1673,36 @@ body {
 }
 
 .banner__about {
-    background-image: url(/assets/img/banners/banner-about.jpg);
+    background-image: url(../img/banners/banner-about.jpg);
 }
 
 .banner__experience {
-    background-image: url(/assets/img/banners/banner-experience.png);
+    background-image: url(../img/banners/banner-experience.png);
     padding: 5rem 0;
 }
 
 .banner__teachers {
-    background-image: url(/assets/img/banners/banner-teachers.jpg);
+    background-image: url(../img/banners/banner-teachers.jpg);
 }
 
 .banner__courses {
-    background-image: url(/assets/img/banners/banner-courses.jpg);
+    background-image: url(../img/banners/banner-courses.jpg);
 }
 
 .banner__frontend {
-    background-image: url(/assets/img/courses-page/01.png);
+    background-image: url(../img/courses-page/01.png);
 }
 
 .banner__blog {
-    background-image: url(/assets/img/banners/banner-enroll.jpg);
+    background-image: url(../img/banners/banner-enroll.jpg);
 }
 
 .banner__contact {
-    background-image: url(/assets/img/banners/banner-about.jpg);
+    background-image: url(../img/banners/banner-about.jpg);
 }
 
 .banner__enroll {
-    background-image: url(/assets/img/banners/banner-enroll.jpg);
+    background-image: url(../img/banners/banner-enroll.jpg);
     padding: 0;
     min-height: 50rem;
 }
